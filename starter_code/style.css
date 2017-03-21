@@ -52,6 +52,15 @@ section {
 	position: relative;
 	clear: both;
 }
+
+button {
+	float: right;
+	background-color: rgba(39, 208, 127,.5);
+}
+
+span {
+	font-weight: 800;
+}
 /* 
 
 */
@@ -99,10 +108,6 @@ section {
 
 
 /* 
-
-	The results container should also fill the width of its container, but only up to 500px.
-
-	The results container should have a background color of #C8DBB3, and comfortable padding around the text.
 
 */
 
