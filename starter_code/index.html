@@ -115,11 +115,15 @@
 
 		$("form").on("submit", function(event){
 			event.preventDefault();
-			alert("Thanks for filling out the form!");
-
+			var name = $('#name').val();
+			var verb1 = $('#verb-1').val();
+			var mission = $('#mission').val();
+			var sentimentRadio = $('input[name=sentiment]:checked', '.radio').val();
+			var noun1 = $('#noun-1').val();
+			var sentimentCheck = $('input[name=adjective-2]:checked', '.check').val() || [];
+			var noun2 = $('#noun-2').val();
 			makeResults();
-			var madlib = $("<div>", {id: madlib});
-			$('.results').append('<p>Once upon a time there was a Developer named NAME. NAME came to General Asssembly to VERB1 the great mountain of programming knowledge. MISSION", NAME shouted. Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN. In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2.</p>');
+			$('.results').append('<p>Once upon a time there was a Developer named ' + name + '. ' + name + ' came to General Asssembly to ' + verb1 + ' the great mountain of programming knowledge. "' + mission + '", ' + name + ' shouted. Though ' + sentimentRadio + ', ' + name + ' was able to overcome all obstacles with the power of their ' + noun1 + '. In the end, their success can be contributed entirely to their "' + sentimentCheck + noun2+ '."</p>');
 
 		    // Stop the form from submitting
 
