@@ -114,6 +114,12 @@
 
 
 		$("form").on("submit", function(event){
+			event.preventDefault();
+			alert("Thanks for filling out the form!");
+
+			makeResults();
+			var madlib = $("<div>", {id: madlib});
+			$('.results').append('<p>Once upon a time there was a Developer named NAME. NAME came to General Asssembly to VERB1 the great mountain of programming knowledge. MISSION", NAME shouted. Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN. In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2.</p>');
 
 		    // Stop the form from submitting
 
