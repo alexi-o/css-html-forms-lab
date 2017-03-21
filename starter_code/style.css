@@ -1,24 +1,66 @@
 /*-------- Utility Styles --------*/
 * {
-	box-sizing: border-box; 
+	box-sizing: border-box;
+	font-family: 'Proza Libre', sans-serif;
+	border-radius: 20px 
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
 
-/* 
-	Use Google Fonts to make all of the text Proza Libre.
+h1 {
+	font-size: 200%;
+}
 
-	Make the Title twice as large as the body text, bold, and give it some nice margin.
+#main {
+	border: 1px solid black;
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+.results {
+	position: relative;
+	float: left;
+	background-color: #C8DBB3;
+}
+.results h1, p {
+	padding: 15px;
+}
+
+section {
+	display: inline;
+	overflow: auto;
+	width: 400px;
+}
+
+.formSection {
+	float: left;
+	background-color: #E3E6EC;
+}
+
+.form {
+	width: 350px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.row {
+	position: relative;
+	padding: 5px 0;
+}
+.formGroup {
+	position: relative;
+	clear: both;
+}
+/* 
+
 */
 
 /*-------- Main Styles --------*/
 
 /* 
-	Make the main container the full width of the page.
 
-	Make the two inner containers (the form and the results) float side by side, on the left side of the screen.
 
-	Every container, form, input, and button should have rounded corners.
 */
 
 /*-------- Form Styles --------*/
@@ -26,13 +68,10 @@
 
 /* 
 
-	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
 	
 	The background should be #E3E6EC, and it should align to the middle of its container.
 	
 	Every element should have nice, even padding or margin around it.
-
-	.row elements should be spaced out so they're not touching.
 
 	.formGroup elements should fill the width of their container, and be inline-block.
 
