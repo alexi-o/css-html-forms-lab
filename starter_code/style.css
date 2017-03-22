@@ -70,10 +70,6 @@ span {
 	font-weight: 800;
 }
 
-option {
-	font-size: 20px;
-}
-
 textarea {
 	height: 100px;
 	border: 1px solid #CCC;
@@ -93,9 +89,10 @@ select {
 	width: 100%;
 }
 
-#noun-1, #noun-2, #name {
+#noun-1, #noun-2, #name, #verb-1, #mission {
 	height: 48px;
 	width: 100%;
+	font-size: 18px;
 }
 /* 
 
